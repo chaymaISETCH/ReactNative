@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import { connect } from 'react-redux';
 
 import firebase from "../firebase/firebaseConfig";
-import { Button,Text, View, StyleSheet } from 'react-native';
+import { Button,Text, View, StyleSheet,ScrollView } from 'react-native';
 
 class Details extends React.Component {
     static navigationOptions = ({navigation})=>{
@@ -28,7 +28,8 @@ class Details extends React.Component {
        
       }
       return (
-       
+        <ScrollView style={styles.container}>
+ 
         <View style={styles.container}>
 
   <View style={styles.c}>
@@ -58,7 +59,7 @@ class Details extends React.Component {
 <Text style={styles.paragraph2}>{this.state.date_debut  || ""}</Text>
 </View>
 
-
+</ScrollView>
 
 <View style={{  flexDirection:"row",
 margin:20,
