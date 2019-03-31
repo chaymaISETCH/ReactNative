@@ -59,8 +59,6 @@ class Details extends React.Component {
 <Text style={styles.paragraph2}>{this.state.date_debut  || ""}</Text>
 </View>
 
-</ScrollView>
-
 <View style={{  flexDirection:"row",
 margin:20,
     justifyContent: 'center', 
@@ -110,6 +108,9 @@ onPress={() => {
 />
 </View>
         </View>
+
+        </ScrollView>
+
           );
     }
   }
